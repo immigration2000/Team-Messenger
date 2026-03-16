@@ -667,9 +667,346 @@ p {
   gap: 16px;
 }
 
+.settings-shortcuts {
+  display: grid;
+  gap: 10px;
+}
+
+.settings-shortcut-card {
+  border: 1px solid #dbe2ea;
+  border-radius: 16px;
+  background: #f8fafc;
+  padding: 14px 16px;
+  text-align: left;
+  font: inherit;
+  color: #0f172a;
+  cursor: pointer;
+  display: grid;
+  gap: 4px;
+}
+
+.settings-shortcut-card span {
+  color: #64748b;
+  font-size: 13px;
+}
+
+.settings-shortcut-card:hover {
+  border-color: #0f766e;
+  background: #ecfeff;
+}
+
 .settings-launch-button {
   width: 100%;
   justify-content: center;
+}
+
+.feature-modal {
+  width: min(100%, 1100px);
+}
+
+.feature-grid {
+  margin-top: 18px;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.feature-card {
+  border: 1px solid #dbe2ea;
+  border-radius: 18px;
+  background: #f8fafc;
+  padding: 18px;
+  min-height: 0;
+  display: grid;
+  gap: 14px;
+}
+
+.feature-card h3 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.approval-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(280px, 360px);
+  gap: 14px;
+  align-items: start;
+}
+
+.approval-item {
+  width: 100%;
+  border: 1px solid #dbe2ea;
+  border-radius: 12px;
+  background: #ffffff;
+  padding: 12px;
+  text-align: left;
+  font: inherit;
+  color: #0f172a;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.approval-detail {
+  border: 1px solid #dbe2ea;
+  border-radius: 16px;
+  background: #ffffff;
+  padding: 14px;
+  display: grid;
+  gap: 10px;
+}
+
+.approval-detail span,
+.approval-detail label span {
+  color: #64748b;
+  font-size: 13px;
+}
+
+.approval-detail p {
+  margin: 0;
+  color: #334155;
+  line-height: 1.6;
+}
+
+.approval-line {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.approval-step {
+  border: 1px solid #99f6e4;
+  border-radius: 999px;
+  background: #f0fdfa;
+  color: #0f766e;
+  font-size: 12px;
+  padding: 4px 8px;
+}
+
+.approval-history {
+  display: grid;
+  gap: 8px;
+}
+
+.compact-list {
+  gap: 6px;
+}
+
+.feature-actions {
+  gap: 6px;
+}
+
+.inline-actions {
+  display: flex;
+  gap: 6px;
+  justify-content: flex-end;
+}
+
+.danger-text {
+  color: #b91c1c;
+}
+
+.composer {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(180px, 220px) auto;
+  gap: 10px;
+  align-items: center;
+}
+
+.invite-row {
+  grid-template-columns: minmax(0, 1fr) auto;
+}
+
+.template-list {
+  display: grid;
+  gap: 8px;
+}
+
+.template-chip-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.composer input {
+  width: 100%;
+  border: 1px solid #cbd5e1;
+  border-radius: 12px;
+  padding: 12px 14px;
+  font: inherit;
+  color: #0f172a;
+  background: #ffffff;
+}
+
+.chat-search {
+  width: 100%;
+  border: 1px solid #cbd5e1;
+  border-radius: 12px;
+  padding: 12px 14px;
+  font: inherit;
+  color: #0f172a;
+  background: #ffffff;
+}
+
+.chat-room-meta {
+  display: grid;
+  gap: 8px;
+}
+
+.channel-admin-grid {
+  display: grid;
+  gap: 12px;
+  padding: 12px;
+  border: 1px solid #dbe2ea;
+  border-radius: 14px;
+  background: #ffffff;
+}
+
+.channel-admin-grid label {
+  display: grid;
+  gap: 6px;
+}
+
+.channel-admin-grid label span {
+  color: #64748b;
+  font-size: 13px;
+}
+
+.channel-admin-grid select,
+.channel-member-row select {
+  width: 100%;
+  border: 1px solid #cbd5e1;
+  border-radius: 12px;
+  padding: 10px 12px;
+  font: inherit;
+  color: #0f172a;
+  background: #ffffff;
+}
+
+.channel-member-board {
+  display: grid;
+  gap: 8px;
+}
+
+.channel-member-row {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 120px auto;
+  gap: 8px;
+  align-items: center;
+}
+
+.member-link {
+  border: 0;
+  background: transparent;
+  color: #0f172a;
+  font: inherit;
+  font-weight: 700;
+  text-align: left;
+  cursor: pointer;
+}
+
+.owner-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #99f6e4;
+  border-radius: 999px;
+  background: #f0fdfa;
+  color: #0f766e;
+  padding: 8px 10px;
+  font-size: 12px;
+}
+
+.member-picker {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.org-board {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.org-column {
+  border: 1px solid #dbe2ea;
+  border-radius: 14px;
+  background: #ffffff;
+  padding: 12px;
+  display: grid;
+  gap: 10px;
+}
+
+.member-chip {
+  border: 1px solid #dbe2ea;
+  border-radius: 999px;
+  background: #ffffff;
+  padding: 8px 12px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.member-chip input {
+  margin: 0;
+}
+
+.read-state {
+  color: #64748b;
+  font-size: 12px;
+}
+
+.reply-chip,
+.attachment-chip {
+  border: 1px solid #dbe2ea;
+  border-radius: 10px;
+  background: #ffffff;
+  color: #475569;
+  font-size: 12px;
+  padding: 6px 8px;
+}
+
+.reply-banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  border: 1px solid #dbe2ea;
+  border-radius: 12px;
+  background: #f8fafc;
+  padding: 10px 12px;
+}
+
+.attendance-list {
+  margin-top: 8px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.attendance-chip {
+  border: 1px solid #dbe2ea;
+  border-radius: 999px;
+  background: #ffffff;
+  padding: 6px 10px;
+  font: inherit;
+  color: #334155;
+  cursor: pointer;
+}
+
+.active-chip {
+  border-color: #0f766e;
+  background: #ccfbf1;
+  color: #0f766e;
+}
+
+.member-profile-form {
+  display: grid;
+  gap: 16px;
 }
 
 .settings-section {
@@ -843,6 +1180,18 @@ p {
   background: #f8fafc;
 }
 
+.account-form textarea,
+.account-form select {
+  width: 100%;
+  border: 1px solid #cbd5e1;
+  border-radius: 12px;
+  padding: 12px 14px;
+  font: inherit;
+  color: #0f172a;
+  background: #f8fafc;
+  resize: vertical;
+}
+
 .account-actions {
   margin-top: 18px;
   display: flex;
@@ -918,17 +1267,45 @@ p {
 }
 
 .channel-item {
-  width: 100%;
   border: 1px solid #d1d9e3;
   background: #f8fafc;
   border-radius: 10px;
   padding: 10px;
-  text-align: left;
-  cursor: pointer;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 10px;
   font-size: 14px;
+}
+
+.channel-main {
+  flex: 1;
+  border: 0;
+  background: transparent;
+  text-align: left;
+  padding: 0;
+  font: inherit;
+  color: inherit;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.channel-tools {
+  display: flex;
+  gap: 6px;
+}
+
+.mini-button {
+  border: 1px solid #cbd5e1;
+  border-radius: 999px;
+  background: #ffffff;
+  padding: 4px 8px;
+  font: inherit;
+  font-size: 11px;
+  color: #334155;
+  cursor: pointer;
 }
 
 .channel-item em {
