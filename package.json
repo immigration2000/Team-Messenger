@@ -1,0 +1,10 @@
+{
+  "name": "team-collab-messenger",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Team messenger with project schedule and leave management",
+  "scripts": {
+    "dev": "echo workspace dev scripts will be added",
+    "build": "echo workspace build scripts will be added"
+  }
+}
